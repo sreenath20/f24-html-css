@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <style>
+        input[type=text],
+        input[type=password],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+            background-color: #3CBC8D;
+            color: white;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <form>
+            <h1>Login Form:</h1>
+            <label for="name">User Name:</label><br>
+            <input id="name" type="text" placeholder="User name" required pattern="[A-Za-z]{3}"
+                title="userName must be at least 3 chars, should not contain digits or special chars"><br>
+
+            <label for="pwd">Password:</label><br>
+            <input id="pwd" type="password" placeholder="Password" required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                required>
+            <br>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+
+</html>
