@@ -8,10 +8,14 @@
             console.log(product);
 
             addCar(new Car(2,"A",100.0));
-            addCar(new Car(4,"F",600.0));
+            addCar(new Car(4,"F",10.0));
             
            console.log( updateCarById(new Car(2,"Aa",150.0)));
            console.log( updateCarById(new Car(5,"Aa",150.0)));
+           addCar(new Car(1,"Z",50.0));
+           console.log(sortCarsByPrice());
+           console.log(sortCarsById());
+           console.log(sortCarsByName());
            
         </script>
     </body>
