@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <script src="myArray.js"></script>
+</head>
+
+<body>
+    <h3>Array CRUD operations:</h3>
+
+    <h5>Elements in array:</h5>
+    <p id="display"></p>
+    <button onclick="document.getElementById('display').innerHTML=getAllNames()">Display</button>
+    <br>
+    <input type="text" id="name">
+    <button onclick="addName(document.getElementById('name').value)">Add</button>
+    <br>
+    <input type="text" id="newName">
+    <input type="number" id="index">
+    <button
+        onclick="updateName(document.getElementById('newName').value,document.getElementById('index').value)">Update</button>
+    <br>
+    <input type="number" id="delIndex">
+    <button onclick="deleteNameByIndex(document.getElementById('delIndex').value)">Delete</button>
+    <br>
+    <input type="text" id="find">
+    <button onclick="findName(document.getElementById('find').value)">Find</button>
+    <br>
+    <button onclick="sortNames()">sort</button>
+</body>
+
+</html>

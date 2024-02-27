@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <script src="Myscripts.js"></script>
+    <!-- <script src="Myscripts2.js"></script> -->
+    <!-- location 2 -->
+    <script>
+        function myFunction() {
+            document.getElementById("id3").innerHTML = "Ford India";
+
+            console.log(countryName);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script>
+
+        console.log(5 >>> 1);
+        let name = "India"; // string
+        name = 10; // number
+        name = true; // boolean
+        name = {}; // empty JSON
+        name = function () { };// empty function
+        name = []//empty array is a object
+        console.log(typeof name);
+        console.log(name instanceof Array);
+
+        class Employee {
+
+            constructor(id, name) {
+                this.id = id;
+                this.name = name;
+            }
+        }
+        let emp = new Employee(1, "Ford");
+        console.log(emp instanceof Employee);
+
+        function display(data) {
+            if (data instanceof Employee) {
+                console.log(data);
+            }
+            else
+                console.log("Not suported data");
+        }
+        display(100);
+        display(emp);
+        console.log(25 == 25);
+        console.log(25 == "25");
+        console.log(25 === "25");//value+type
+
+    </script>
+
+    <h1 id="id0">Header 0</h1>
+    <h1 id="id1">Header 1</h1>
+    <h1 id="id3"></h1>
+    <p id="textId1"> Initial para</p>
+    <!-- event registration -->
+    <button onclick="myFunction()">change header</button>
+    <button onclick="myFunction2()">change para</button>
+    <button onclick="myFunction3()">log country</button>
+    <!-- location 1  -->
+    <script>
+        document.getElementById("id1").innerHTML = "Header changed";
+        console.log("Welcome to Js");
+
+        // function myFunction() {
+        //     document.getElementById("id3").innerHTML = "Ford India";
+        // }
+
+    </script>
+</body>
+
+</html>
